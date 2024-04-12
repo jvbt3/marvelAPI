@@ -1,10 +1,9 @@
 import { Injectable } from '@nestjs/common';
-import { CreateComicDto } from './dto/create-comic.dto';
-import { UpdateComicDto } from './dto/update-comic.dto';
+import { ComicDto } from './dto/create-comic.dto';
 
 @Injectable()
 export class ComicsService {
-  create(createComicDto: CreateComicDto) {
+  create(createComicDto: ComicDto) {
     return 'This action adds a new comic';
   }
 
@@ -14,10 +13,6 @@ export class ComicsService {
 
   findOne(id: number) {
     return `This action returns a #${id} comic`;
-  }
-
-  update(id: number, updateComicDto: UpdateComicDto) {
-    return `This action updates a #${id} comic`;
   }
 
   remove(id: number) {

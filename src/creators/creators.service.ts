@@ -1,10 +1,9 @@
 import { Injectable } from '@nestjs/common';
-import { CreateCreatorDto } from './dto/create-creator.dto';
-import { UpdateCreatorDto } from './dto/update-creator.dto';
+import { CreatorDto } from './dto/create-creator.dto';
 
 @Injectable()
 export class CreatorsService {
-  create(createCreatorDto: CreateCreatorDto) {
+  create(createCreatorDto: CreatorDto) {
     return 'This action adds a new creator';
   }
 
@@ -14,10 +13,6 @@ export class CreatorsService {
 
   findOne(id: number) {
     return `This action returns a #${id} creator`;
-  }
-
-  update(id: number, updateCreatorDto: UpdateCreatorDto) {
-    return `This action updates a #${id} creator`;
   }
 
   remove(id: number) {

@@ -1,14 +1,13 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
 import { ComicsService } from './comics.service';
-import { CreateComicDto } from './dto/create-comic.dto';
-import { UpdateComicDto } from './dto/update-comic.dto';
+import { ComicDto } from './dto/create-comic.dto';
 
 @Controller('comics')
 export class ComicsController {
   constructor(private readonly comicsService: ComicsService) {}
 
   @Post()
-  create(@Body() createComicDto: CreateComicDto) {
+  create(@Body() createComicDto: ComicDto) {
     return this.comicsService.create(createComicDto);
   }
 
@@ -20,11 +19,6 @@ export class ComicsController {
   @Get(':id')
   findOne(@Param('id') id: string) {
     return this.comicsService.findOne(+id);
-  }
-
-  @Patch(':id')
-  update(@Param('id') id: string, @Body() updateComicDto: UpdateComicDto) {
-    return this.comicsService.update(+id, updateComicDto);
   }
 
   @Delete(':id')

@@ -1,14 +1,13 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
 import { CharacterService } from './character.service';
-import { CreateCharacterDto } from './dto/create-character.dto';
-import { UpdateCharacterDto } from './dto/update-character.dto';
+import { CharacterDto } from './dto/create-character.dto';
 
 @Controller('character')
 export class CharacterController {
   constructor(private readonly characterService: CharacterService) {}
 
   @Post()
-  create(@Body() createCharacterDto: CreateCharacterDto) {
+  create(@Body() createCharacterDto: CharacterDto) {
     return this.characterService.create(createCharacterDto);
   }
 
@@ -20,11 +19,6 @@ export class CharacterController {
   @Get(':id')
   findOne(@Param('id') id: string) {
     return this.characterService.findOne(+id);
-  }
-
-  @Patch(':id')
-  update(@Param('id') id: string, @Body() updateCharacterDto: UpdateCharacterDto) {
-    return this.characterService.update(+id, updateCharacterDto);
   }
 
   @Delete(':id')

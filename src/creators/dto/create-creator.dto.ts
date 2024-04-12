@@ -1,7 +1,7 @@
 import { IsString, IsUrl } from "class-validator";
 
 
-export class MarvelDto {
+export class CreatorDto {
     @IsString()
     name: string
 

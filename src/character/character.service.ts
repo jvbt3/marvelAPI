@@ -14,7 +14,6 @@ export class CharacterService {
   findOne(id: number) {
     return `This action returns a #${id} character`;
   }
-
   remove(id: number) {
     return `This action removes a #${id} character`;
   }

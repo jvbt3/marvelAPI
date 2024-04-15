@@ -9,5 +9,5 @@ export class CreatorDto {
     description: string
 
     @IsUrl()
-    url: URL
+    url: string
 }

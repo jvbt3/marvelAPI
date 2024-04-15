@@ -5,9 +5,11 @@ import { ComicsModule } from './comics/comics.module';
 import { CharacterModule } from './character/character.module';
 import { HttpModule } from '@nestjs/axios';
 import { AppController } from './app.controller';
+import { MongooseModule } from '@nestjs/mongoose';
+
 
 @Module({
-  imports: [CreatorsModule, ComicsModule, CharacterModule, HttpModule],
+  imports: [CreatorsModule, ComicsModule, CharacterModule, HttpModule, MongooseModule.forRoot('mongodb://localhost/nest')],
   controllers: [AppController],
   providers: [AppService],
 })

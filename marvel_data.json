@@ -1,0 +1,1064 @@
+[
+  {
+    "id": 1067,
+    "title": "Civil War (2006 - 2007)",
+    "description": "The event that changed the Marvel Universe forever! When a tragic event leaves the public demanding super heroes register their identities, a schism in the Avengers sets Captain America and Iron Man against each other and spirals Marvel's major players into all-out Civil War!",
+    "resourceURI": "http://gateway.marvel.com/v1/public/series/1067",
+    "urls": [
+      {
+        "type": "detail",
+        "url": "http://marvel.com/comics/series/1067/civil_war_2006_-_2007?utm_campaign=apiRef&utm_source=30e2ca2d99c629b3fd7decf3548bce07"
+      }
+    ],
+    "startYear": 2006,
+    "endYear": 2007,
+    "rating": "T",
+    "type": "",
+    "modified": "2015-04-28T13:04:34-0400",
+    "thumbnail": {
+      "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/e0/553fbd298c248",
+      "extension": "jpg"
+    },
+    "creators": {
+      "available": 11,
+      "collectionURI": "http://gateway.marvel.com/v1/public/series/1067/creators",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/452",
+          "name": "Virtual Calligr",
+          "role": "letterer"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/12581",
+          "name": "Vc Chris Eliopoulos",
+          "role": "letterer"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/359",
+          "name": "John Dell",
+          "role": "inker"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/427",
+          "name": "Tim Townsend",
+          "role": "inker"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/471",
+          "name": "Dexter Vines",
+          "role": "inker"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/774",
+          "name": "Morry Hollowell",
+          "role": "colorist"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/4306",
+          "name": "Laura Martin",
+          "role": "colorist"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/479",
+          "name": "Paul Mounts",
+          "role": "colorist"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/9484",
+          "name": "Steve Mcniven",
+          "role": "penciler"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/88",
+          "name": "Mark Millar",
+          "role": "writer"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/856",
+          "name": "Michael Turner",
+          "role": "penciller (cover)"
+        }
+      ],
+      "returned": 11
+    },
+    "characters": {
+      "available": 34,
+      "collectionURI": "http://gateway.marvel.com/v1/public/series/1067/characters",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009212",
+          "name": "Bullseye"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009220",
+          "name": "Captain America"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010338",
+          "name": "Captain Marvel (Carol Danvers)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009241",
+          "name": "Cloak"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009258",
+          "name": "Dagger"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009262",
+          "name": "Daredevil"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009297",
+          "name": "Falcon"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009299",
+          "name": "Fantastic Four"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010927",
+          "name": "Goliath (Bill Foster)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/characters/1011490",
+          "name": "Hank Pym"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010808",
+          "name": "Hawkeye (Kate Bishop)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009355",
+          "name": "Hulkling"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009356",
+          "name": "Human Torch"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009362",
+          "name": "Iceman"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009366",
+          "name": "Invisible Woman"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009367",
+          "name": "Iron Fist (Danny Rand)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009368",
+          "name": "Iron Man"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009215",
+          "name": "Luke Cage"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009459",
+          "name": "Mr. Fantastic"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009492",
+          "name": "Patriot"
+        }
+      ],
+      "returned": 20
+    },
+    "stories": {
+      "available": 38,
+      "collectionURI": "http://gateway.marvel.com/v1/public/series/1067/stories",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5872",
+          "name": "1 of 7 - 7XLS",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5873",
+          "name": "1 of 7 - 7XLS",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5874",
+          "name": "Cover #5874",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5875",
+          "name": "Interior #5875",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5876",
+          "name": "2 of 7 - 7XLS",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5877",
+          "name": "2 of 7 - 7XLS",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5878",
+          "name": "3 of 7 - 7XLS",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5879",
+          "name": "3 of 7 - 7XLS",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5880",
+          "name": "Cover #5880",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5881",
+          "name": "Interior #5881",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5882",
+          "name": "Cover #5882",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5883",
+          "name": "Interior #5883",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5884",
+          "name": "4 of 7 - 7XLS",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5885",
+          "name": "4 of 7 - 7XLS",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5886",
+          "name": "Cover #5886",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5887",
+          "name": "Interior #5887",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5888",
+          "name": "5 of 7 - 7XLS",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5889",
+          "name": "5 of 7 - 7XLS",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5890",
+          "name": "Cover #5890",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5891",
+          "name": "Interior #5891",
+          "type": "interiorStory"
+        }
+      ],
+      "returned": 20
+    },
+    "comics": {
+      "available": 19,
+      "collectionURI": "http://gateway.marvel.com/v1/public/series/1067/comics",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/4216",
+          "name": "Civil War (2006) #1"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/4217",
+          "name": "Civil War (2006) #1 (Turner Variant)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/4514",
+          "name": "Civil War (2006) #1 (sketch variant)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/4313",
+          "name": "Civil War (2006) #2"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/4468",
+          "name": "Civil War (2006) #3"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/4469",
+          "name": "Civil War (2006) #3 (Turner Variant)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/4786",
+          "name": "Civil War (2006) #4"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/4787",
+          "name": "Civil War (2006) #4 (Michael Turner Variant Cover)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/5075",
+          "name": "Civil War (2006) #5"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/5528",
+          "name": "Civil War (2006) #5 (Turner Variant)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/5077",
+          "name": "Civil War (2006) #5 (TURNER VARIANT)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/5142",
+          "name": "Civil War (2006) #5 (TURNER SKETCH VARIANT)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/5467",
+          "name": "Civil War (2006) #5 (TURNER SKETCH VARIANT)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/5227",
+          "name": "Civil War (2006) #6"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/5229",
+          "name": "Civil War (2006) #6 (Turner Variant)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/5295",
+          "name": "Civil War (2006) #6 (Turner Sketch Variant)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/5793",
+          "name": "Civil War (2006) #7"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/5794",
+          "name": "Civil War (2006) #7 (Turner Variant)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/5859",
+          "name": "Civil War (2006) #7 (Turner Sketch Variant)"
+        }
+      ],
+      "returned": 19
+    },
+    "events": {
+      "available": 1,
+      "collectionURI": "http://gateway.marvel.com/v1/public/series/1067/events",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/events/238",
+          "name": "Civil War"
+        }
+      ],
+      "returned": 1
+    },
+    "next": {
+      "resourceURI": "http://gateway.marvel.com/v1/public/series/3904",
+      "name": "Civil War: The Confession (2007)"
+    },
+    "previous": {
+      "resourceURI": "http://gateway.marvel.com/v1/public/series/418",
+      "name": "Secret War (2004 - 2005)"
+    }
+  },
+  {
+    "id": 1893,
+    "title": "Civil War (2007)",
+    "description": null,
+    "resourceURI": "http://gateway.marvel.com/v1/public/series/1893",
+    "urls": [
+      {
+        "type": "detail",
+        "url": "http://marvel.com/comics/series/1893/civil_war_2007?utm_campaign=apiRef&utm_source=30e2ca2d99c629b3fd7decf3548bce07"
+      }
+    ],
+    "startYear": 2007,
+    "endYear": 2007,
+    "rating": "Rated T+",
+    "type": "",
+    "modified": "2016-05-10T14:04:51-0400",
+    "thumbnail": {
+      "path": "http://i.annihil.us/u/prod/marvel/i/mg/2/20/4bc355101160b",
+      "extension": "jpg"
+    },
+    "creators": {
+      "available": 10,
+      "collectionURI": "http://gateway.marvel.com/v1/public/series/1893/creators",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/452",
+          "name": "Virtual Calligr",
+          "role": "letterer"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/12581",
+          "name": "Vc Chris Eliopoulos",
+          "role": "letterer"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/359",
+          "name": "John Dell",
+          "role": "inker"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/427",
+          "name": "Tim Townsend",
+          "role": "inker"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/471",
+          "name": "Dexter Vines",
+          "role": "inker"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/774",
+          "name": "Morry Hollowell",
+          "role": "colorist"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/4306",
+          "name": "Laura Martin",
+          "role": "colorist"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/479",
+          "name": "Paul Mounts",
+          "role": "colorist"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/9484",
+          "name": "Steve Mcniven",
+          "role": "penciler"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/88",
+          "name": "Mark Millar",
+          "role": "writer"
+        }
+      ],
+      "returned": 10
+    },
+    "characters": {
+      "available": 0,
+      "collectionURI": "http://gateway.marvel.com/v1/public/series/1893/characters",
+      "items": [],
+      "returned": 0
+    },
+    "stories": {
+      "available": 26,
+      "collectionURI": "http://gateway.marvel.com/v1/public/series/1893/stories",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5873",
+          "name": "1 of 7 - 7XLS",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5875",
+          "name": "Interior #5875",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5877",
+          "name": "2 of 7 - 7XLS",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5879",
+          "name": "3 of 7 - 7XLS",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5881",
+          "name": "Interior #5881",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5883",
+          "name": "Interior #5883",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5885",
+          "name": "4 of 7 - 7XLS",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5887",
+          "name": "Interior #5887",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5889",
+          "name": "5 of 7 - 7XLS",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5891",
+          "name": "Interior #5891",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5893",
+          "name": "Interior #5893",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5895",
+          "name": "6 of 7 - 7XLS",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5897",
+          "name": "Interior #5897",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5898",
+          "name": "Interior #5898",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5899",
+          "name": "Interior #5899",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5901",
+          "name": "5 of 7 - 7XLS",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5902",
+          "name": "Interior #5902",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5904",
+          "name": "7 of 7 - 7XLS",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5906",
+          "name": "Interior #5906",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5908",
+          "name": "Interior #5908",
+          "type": "interiorStory"
+        }
+      ],
+      "returned": 20
+    },
+    "comics": {
+      "available": 3,
+      "collectionURI": "http://gateway.marvel.com/v1/public/series/1893/comics",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/6133",
+          "name": "Civil War (Trade Paperback)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/6415",
+          "name": "Civil War (Trade Paperback)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/42411",
+          "name": "Civil War (Trade Paperback)"
+        }
+      ],
+      "returned": 3
+    },
+    "events": {
+      "available": 1,
+      "collectionURI": "http://gateway.marvel.com/v1/public/series/1893/events",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/events/238",
+          "name": "Civil War"
+        }
+      ],
+      "returned": 1
+    },
+    "next": null,
+    "previous": null
+  },
+  {
+    "id": 6208,
+    "title": "Civil War (2006 - Present)",
+    "description": null,
+    "resourceURI": "http://gateway.marvel.com/v1/public/series/6208",
+    "urls": [
+      {
+        "type": "detail",
+        "url": "http://marvel.com/comics/series/6208/civil_war_2006_-_present?utm_campaign=apiRef&utm_source=30e2ca2d99c629b3fd7decf3548bce07"
+      }
+    ],
+    "startYear": 2006,
+    "endYear": 2099,
+    "rating": "RATED T+",
+    "type": "",
+    "modified": "2011-04-29T14:04:00-0400",
+    "thumbnail": {
+      "path": "http://i.annihil.us/u/prod/marvel/i/mg/c/d0/4bb67e65e44df",
+      "extension": "jpg"
+    },
+    "creators": {
+      "available": 0,
+      "collectionURI": "http://gateway.marvel.com/v1/public/series/6208/creators",
+      "items": [],
+      "returned": 0
+    },
+    "characters": {
+      "available": 0,
+      "collectionURI": "http://gateway.marvel.com/v1/public/series/6208/characters",
+      "items": [],
+      "returned": 0
+    },
+    "stories": {
+      "available": 10,
+      "collectionURI": "http://gateway.marvel.com/v1/public/series/6208/stories",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/50048",
+          "name": "Civil War 1-7; Marvel Spotlight Civil War; Civil War Script Book",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/50049",
+          "name": "Civil War 1-7; Marvel Spotlight Civil War; Civil War Script Book",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/216066",
+          "name": "cover from new series (2029) #113",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/216067",
+          "name": "story from new series (2029) #113",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/216068",
+          "name": "cover from new series (2029) #114",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/216069",
+          "name": "story from new series (2029) #114",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/216070",
+          "name": "cover from new series (2029) #115",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/216071",
+          "name": "story from new series (2029) #115",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/216072",
+          "name": "cover from new series (2029) #116",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/216073",
+          "name": "story from new series (2029) #116",
+          "type": "interiorStory"
+        }
+      ],
+      "returned": 10
+    },
+    "comics": {
+      "available": 1,
+      "collectionURI": "http://gateway.marvel.com/v1/public/series/6208/comics",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/22582",
+          "name": "Civil War (Hardcover)"
+        }
+      ],
+      "returned": 1
+    },
+    "events": {
+      "available": 1,
+      "collectionURI": "http://gateway.marvel.com/v1/public/series/6208/events",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/events/238",
+          "name": "Civil War"
+        }
+      ],
+      "returned": 1
+    },
+    "next": null,
+    "previous": null
+  },
+  {
+    "id": 19350,
+    "title": "Civil War (2015)",
+    "description": null,
+    "resourceURI": "http://gateway.marvel.com/v1/public/series/19350",
+    "urls": [
+      {
+        "type": "detail",
+        "url": "http://marvel.com/comics/series/19350/civil_war_2015?utm_campaign=apiRef&utm_source=30e2ca2d99c629b3fd7decf3548bce07"
+      }
+    ],
+    "startYear": 2015,
+    "endYear": 2015,
+    "rating": "",
+    "type": "",
+    "modified": "2019-09-10T14:49:04-0400",
+    "thumbnail": {
+      "path": "http://i.annihil.us/u/prod/marvel/i/mg/d/30/55df45efd586c",
+      "extension": "jpg"
+    },
+    "creators": {
+      "available": 13,
+      "collectionURI": "http://gateway.marvel.com/v1/public/series/19350/creators",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/8542",
+          "name": "Gerry Alanguilan",
+          "role": "inker"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/219",
+          "name": "Kia Asamiya",
+          "role": "penciler (cover)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/357",
+          "name": "Jim Cheung",
+          "role": "penciler (cover)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/2133",
+          "name": "Tom Brevoort",
+          "role": "editor"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/162",
+          "name": "John Cassaday",
+          "role": "penciller (cover)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/6170",
+          "name": "Olivier Coipel",
+          "role": "penciller (cover)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/436",
+          "name": "Adi Granov",
+          "role": "penciller (cover)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/25",
+          "name": "Alex Maleev",
+          "role": "penciller (cover)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/758",
+          "name": "Leinil Francis Yu",
+          "role": "penciller (cover)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/11579",
+          "name": "Sunny Gho",
+          "role": "artist"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/360",
+          "name": "Justin Ponsor",
+          "role": "colorist (cover)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/12974",
+          "name": "Vc Joe Sabino",
+          "role": "letterer"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/12371",
+          "name": "Charles Soule",
+          "role": "writer"
+        }
+      ],
+      "returned": 13
+    },
+    "characters": {
+      "available": 0,
+      "collectionURI": "http://gateway.marvel.com/v1/public/series/19350/characters",
+      "items": [],
+      "returned": 0
+    },
+    "stories": {
+      "available": 23,
+      "collectionURI": "http://gateway.marvel.com/v1/public/series/19350/stories",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/114731",
+          "name": "cover from Civil War (2015) #1",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/114732",
+          "name": "story from Civil War (2015) #1",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/114734",
+          "name": "story from Civil War (2015) #1 (YOUNG VARIANT)",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/114735",
+          "name": "cover from Civil War (2015) #2",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/114736",
+          "name": "story from Civil War (2015) #2",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/114737",
+          "name": "cover from Civil War (2015) #3",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/114738",
+          "name": "story from Civil War (2015) #3",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/114739",
+          "name": "cover from Civil War (2015) #4",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/114740",
+          "name": "story from Civil War (2015) #4",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/114741",
+          "name": "cover from Civil War (2015) #5",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/114742",
+          "name": "story from Civil War (2015) #5",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/118254",
+          "name": "cover from Civil War (2015) #1 (GRANOV PROMO VARIANT)",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/118255",
+          "name": "story from Civil War (2015) #1 (GRANOV PROMO VARIANT)",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/121127",
+          "name": "cover from Civil War (2015) #2 (TBD ARTIST LANDSCAPE WRAPAROUND VARIANT)",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/121128",
+          "name": "story from Civil War (2015) #2 (TBD ARTIST LANDSCAPE WRAPAROUND VARIANT)",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/122819",
+          "name": "cover from Civil War (2015) #3 (TBD ARTIST MANGA VARIANT)",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/122820",
+          "name": "story from Civil War (2015) #3 (TBD ARTIST MANGA VARIANT)",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/123529",
+          "name": "cover from Civil War (2015) #3 (TBD ARTIST VARIANT)",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/123530",
+          "name": "story from Civil War (2015) #3 (TBD ARTIST VARIANT)",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/124119",
+          "name": "cover from Civil War (2015) #2 (COIPEL VARIANT)",
+          "type": "cover"
+        }
+      ],
+      "returned": 20
+    },
+    "comics": {
+      "available": 10,
+      "collectionURI": "http://gateway.marvel.com/v1/public/series/19350/comics",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/51577",
+          "name": "Civil War (2015) #1"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/51578",
+          "name": "Civil War (2015) #1 (Young Variant)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/53468",
+          "name": "Civil War (2015) #1 (Granov Civil War Promo Variant)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/51579",
+          "name": "Civil War (2015) #2"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/54982",
+          "name": "Civil War (2015) #2 (Maleev Landscape Wraparound Variant)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/56632",
+          "name": "Civil War (2015) #2 (Coipel Variant)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/51580",
+          "name": "Civil War (2015) #3"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/51581",
+          "name": "Civil War (2015) #4"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/51582",
+          "name": "Civil War (2015) #5"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/56633",
+          "name": "Civil War (2015) #5 (Cassaday Kirby Monster Variant)"
+        }
+      ],
+      "returned": 10
+    },
+    "events": {
+      "available": 0,
+      "collectionURI": "http://gateway.marvel.com/v1/public/series/19350/events",
+      "items": [],
+      "returned": 0
+    },
+    "next": null,
+    "previous": null
+  },
+  {
+    "id": 20721,
+    "title": "Civil War (2016)",
+    "description": null,
+    "resourceURI": "http://gateway.marvel.com/v1/public/series/20721",
+    "urls": [
+      {
+        "type": "detail",
+        "url": "http://marvel.com/comics/series/20721/civil_war_2016?utm_campaign=apiRef&utm_source=30e2ca2d99c629b3fd7decf3548bce07"
+      }
+    ],
+    "startYear": 2016,
+    "endYear": 2016,
+    "rating": "",
+    "type": "collection",
+    "modified": "2016-01-15T13:54:05-0500",
+    "thumbnail": {
+      "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+      "extension": "jpg"
+    },
+    "creators": {
+      "available": 3,
+      "collectionURI": "http://gateway.marvel.com/v1/public/series/20721/creators",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/12581",
+          "name": "Vc Chris Eliopoulos",
+          "role": "letterer"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/9484",
+          "name": "Steve Mcniven",
+          "role": "penciler (cover)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/creators/4430",
+          "name": "Jeff Youngquist",
+          "role": "editor"
+        }
+      ],
+      "returned": 3
+    },
+    "characters": {
+      "available": 0,
+      "collectionURI": "http://gateway.marvel.com/v1/public/series/20721/characters",
+      "items": [],
+      "returned": 0
+    },
+    "stories": {
+      "available": 2,
+      "collectionURI": "http://gateway.marvel.com/v1/public/series/20721/stories",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/124097",
+          "name": "cover from Civil War (2016)",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/124098",
+          "name": "story from Civil War (2016)",
+          "type": "interiorStory"
+        }
+      ],
+      "returned": 2
+    },
+    "comics": {
+      "available": 1,
+      "collectionURI": "http://gateway.marvel.com/v1/public/series/20721/comics",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/56621",
+          "name": "Civil War (Hardcover)"
+        }
+      ],
+      "returned": 1
+    },
+    "events": {
+      "available": 0,
+      "collectionURI": "http://gateway.marvel.com/v1/public/series/20721/events",
+      "items": [],
+      "returned": 0
+    },
+    "next": null,
+    "previous": null
+  }
+]

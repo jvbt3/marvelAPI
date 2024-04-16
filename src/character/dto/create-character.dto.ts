@@ -6,8 +6,8 @@ export class CharacterDto {
     name: string
 
     @IsString()
-    departament: string
+    description: string
 
     @IsString()
-    contribuitions: string
+    url: string
 }

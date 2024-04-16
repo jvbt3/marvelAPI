@@ -1,13 +1,13 @@
 import { IsString, IsUrl } from "class-validator";
 
 
-export class CreatorDto {
+export class CreateCreatorDto {
     @IsString()
     name: string
 
     @IsString()
-    description: string
+    Hqs: string
 
-    @IsUrl()
-    url: string
+    @IsString()
+    roles: string
 }

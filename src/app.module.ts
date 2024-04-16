@@ -9,7 +9,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 
 
 @Module({
-  imports: [CreatorsModule, ComicsModule, CharacterModule, HttpModule, MongooseModule.forRoot('mongodb://localhost/nest')],
+  imports: [CreatorsModule, ComicsModule, CharacterModule, HttpModule, MongooseModule.forRoot('mongodb://localhost/marvel')],
   controllers: [AppController],
   providers: [AppService],
 })

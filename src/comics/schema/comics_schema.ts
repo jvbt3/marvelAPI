@@ -6,10 +6,13 @@ export type ComicsDocument = HydratedDocument<Comics>
 @Schema({timestamps: true})
 export class Comics {
     @Prop()
+    id: string
+
+    @Prop()
     name: string
 
     @Prop()
-    resourceURI: string
+    description: string
 }
 
 export const ComicsSchema = SchemaFactory.createForClass(Comics)

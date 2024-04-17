@@ -8,6 +8,8 @@ const fs = require('fs').promises;
 @Injectable()
 export class ComicsService {
 
+  param = 'apikey=30e2ca2d99c629b3fd7decf3548bce07&ts=1&hash=870467879ca0c097576692935416d400'
+
   constructor(@InjectModel(Comics.name) private comicsModel: Model<Comics>) { }
 
   async create() {
@@ -47,12 +49,21 @@ export class ComicsService {
 
     try {
       const marvelData = await this.readMarvel();
-      const mappedData = await marvelData[0].comics.items.map((items) => {
+      const mappedDataPromises = await marvelData[0].comics.items.map(async (items) => {
+        const modifiedResourceURI = (`${items.resourceURI}?${this.param}`)
+        const dataFetch = await fetch(modifiedResourceURI)
+        const data = await dataFetch.json()
+
+        const description = await data.data.results[0].description
+        
         return {
+          id: data.data.results[0].id,
           name: items.name,
-          resourceURI: items.resourceURI
+          description: description
         };
       });
+
+      const mappedData = await Promise.all(mappedDataPromises);
       return mappedData;
     } catch (error) {
       console.error('Error in mappedMarvel:', error);

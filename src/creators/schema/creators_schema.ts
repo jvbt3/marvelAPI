@@ -9,8 +9,7 @@ export class Creators {
     name: string
 
     @Prop()
-    hqs: string
-
+    comics: string
     @Prop()
     roles: string
 }

@@ -3,8 +3,13 @@ const fs = require('fs').promises;
 import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
 import { Creators } from './schema/creators_schema';
+
 @Injectable()
 export class CreatorsService {
+
+  param = 'apikey=30e2ca2d99c629b3fd7decf3548bce07&ts=1&hash=870467879ca0c097576692935416d400'
+
+  httpService: any;
 
   constructor(@InjectModel(Creators.name) private creatorsModel: Model<Creators>) { }
 
@@ -45,19 +50,31 @@ export class CreatorsService {
     console.log('Sucesso ao mapear!');
 
     try {
-      const marvelData = await this.readMarvel();
-      const mappedData = await marvelData[0].creators.items.map((items) => {
-        return {
-          name: items.name,
-          roles: items.role,
-          hqs: items.resourceURI
-        };
-      });
-      return mappedData;
+        const marvelData = await this.readMarvel();
+
+        const mappedDataPromises = marvelData[0].creators.items.map(async (item) => {
+
+            const modifiedResourceURI = `${item.resourceURI}?${this.param}`;
+
+            const dataFetch = await fetch(modifiedResourceURI);
+
+            const data = await dataFetch.json()
+
+            const comics = data.data.results[0].comics.items
+            
+            return {
+                name: item.name,
+                roles: item.role,
+                comics: comics
+            };
+        });
+
+        const mappedData = await Promise.all(mappedDataPromises);
+
+        return mappedData;
     } catch (error) {
-      console.error('Error in mappedMarvel:', error);
-      return [];
+        console.error('Error in mappedMarvel:', error);
+        return [];
     }
   }
-
 }

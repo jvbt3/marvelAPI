@@ -6,9 +6,9 @@ import { CharacterDto } from './dto/create-character.dto';
 export class CharacterController {
   constructor(private readonly characterService: CharacterService) {}
 
-  @Post()
-  create(@Body() createCharacterDto: CharacterDto) {
-    return this.characterService.create(createCharacterDto);
+  @Get()
+  create() {
+    return this.characterService.create();
   }
 
   @Get()

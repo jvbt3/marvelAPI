@@ -1,6 +1,8 @@
 import { IsDate, IsString } from "class-validator"
 
 export class ComicDto {
+    @IsString()
+    id: string
 
     @IsString()
     title: string
@@ -8,9 +10,9 @@ export class ComicDto {
     @IsString()
     description: string
 
-    @IsDate()
-    dateOfPublication: Date
+    @IsString()
+    dateOfPublication: string
     
     @IsString()
-    urlCapa: string
+    urlImage: string
 }

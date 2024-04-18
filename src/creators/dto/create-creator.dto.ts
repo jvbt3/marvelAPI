@@ -1,12 +1,15 @@
-import { IsString, IsUrl } from "class-validator";
+import { IsArray, IsString, IsUrl } from "class-validator";
 
 
 export class CreateCreatorDto {
     @IsString()
+    id: string
+    
+    @IsString()
     name: string
 
     @IsString()
-    Hqs: string
+    comics: string
 
     @IsString()
     roles: string

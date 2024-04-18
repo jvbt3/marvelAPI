@@ -3,29 +3,40 @@ const fs = require('fs').promises;
 import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
 import { Creators } from './schema/creators_schema';
+import { CreateCreatorDto } from './dto/create-creator.dto';
+
 @Injectable()
 export class CreatorsService {
+
+  param = 'apikey=30e2ca2d99c629b3fd7decf3548bce07&ts=1&hash=870467879ca0c097576692935416d400'
+
+  httpService: any;
 
   constructor(@InjectModel(Creators.name) private creatorsModel: Model<Creators>) { }
 
   async create() {
     const create = await this.mappedMarvel()
-    console.log(create)
     return this.creatorsModel.create(create)
   }
 
-  async findAll() {
-    const find = await this.mappedMarvel()
-    return this.creatorsModel.find(find)
+  findAll() {
+    return this.creatorsModel.find()
   }
 
-  async findOne(name: string) {
-    const findOne = await this.mappedMarvel()
-    return this.creatorsModel.findOne({name: name})
+  createOne(creatorDTO: CreateCreatorDto) {
+    return this.creatorsModel.create(creatorDTO)
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} creator`;
+  async findOne(id: string) {
+    return this.creatorsModel.findOne({id: id})
+  }
+
+  update(id: string, creatorDTO: CreateCreatorDto) {
+    return this.creatorsModel.updateOne({id: id}, creatorDTO)
+  }
+
+  remove(id: string) {
+    return this.creatorsModel.deleteOne({id: id});
   }
 
   async readMarvel() {
@@ -45,19 +56,25 @@ export class CreatorsService {
     console.log('Sucesso ao mapear!');
 
     try {
-      const marvelData = await this.readMarvel();
-      const mappedData = await marvelData[0].creators.items.map((items) => {
-        return {
-          name: items.name,
-          roles: items.role,
-          hqs: items.resourceURI
-        };
-      });
-      return mappedData;
+        const marvelData = await this.readMarvel();
+        const mappedDataPromises = marvelData[0].creators.items.map(async (item) => {
+            const modifiedResourceURI = (`${item.resourceURI}?${this.param}`);
+            const dataFetch = await fetch(modifiedResourceURI);
+            const data = await dataFetch.json()
+            return {
+                id: data.data.results[0].id,
+                name: item.name,
+                roles: item.role,
+                comics: data.data.results[0].comics.items
+            };
+        });
+
+        const mappedData = await Promise.all(mappedDataPromises);
+
+        return mappedData;
     } catch (error) {
-      console.error('Error in mappedMarvel:', error);
-      return [];
+        console.error('Error in mappedMarvel:', error);
+        return [];
     }
   }
-
 }

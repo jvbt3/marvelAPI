@@ -6,9 +6,14 @@ import { CharacterDto } from './dto/create-character.dto';
 export class CharacterController {
   constructor(private readonly characterService: CharacterService) {}
 
-  @Get()
+  @Post()
   create() {
     return this.characterService.create();
+  }
+
+  @Post('/create') 
+    createOne(@Body() characterDTO: CharacterDto) {
+      return this.characterService.createOne(characterDTO)
   }
 
   @Get()
@@ -18,11 +23,16 @@ export class CharacterController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.characterService.findOne(+id);
+    return this.characterService.findOne(id);
+  }
+
+  @Patch(':id')
+  updateOne(@Param('id') id: string, @Body() characterDTO: CharacterDto) {
+    return this.characterService.update(id, characterDTO)
   }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.characterService.remove(+id);
+    return this.characterService.remove(id);
   }
 }

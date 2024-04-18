@@ -1,13 +1,19 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
 import { CreatorsService } from './creators.service';
+import { CreateCreatorDto } from './dto/create-creator.dto';
 
 @Controller('creators')
 export class CreatorsController {
   constructor(private readonly creatorsService: CreatorsService) {}
 
-  @Get()
+  @Post()
   create() {
     return this.creatorsService.create();
+  }
+
+  @Post('/create')
+  createOne(@Body() createDTO: CreateCreatorDto) {
+    return this.creatorsService.createOne(createDTO);
   }
 
   @Get()
@@ -15,13 +21,18 @@ export class CreatorsController {
     return this.creatorsService.findAll();
   }
 
-  @Get(':name')
-  findOne(@Param('name') name: string) {
-    return this.creatorsService.findOne(name);
+  @Patch(':id')
+  updateOne(@Param('id') id: string, @Body() createDTO: CreateCreatorDto) {
+    return this.creatorsService.update(id, createDTO);
+  }
+
+  @Get(':id')
+  findOne(@Param('id') id: string) {
+    return this.creatorsService.findOne(id);
   }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.creatorsService.remove(+id);
+    return this.creatorsService.remove(id);
   }
 }

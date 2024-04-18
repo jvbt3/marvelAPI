@@ -8,25 +8,33 @@ const fs = require('fs').promises;
 @Injectable()
 export class ComicsService {
 
+  param = 'apikey=30e2ca2d99c629b3fd7decf3548bce07&ts=1&hash=870467879ca0c097576692935416d400'
+
   constructor(@InjectModel(Comics.name) private comicsModel: Model<Comics>) { }
 
   async create() {
     const create = await this.mappedMarvel()
-    console.log(create)
     return this.comicsModel.create(create)
   }
 
+  createOne(comicDTO: ComicDto) {
+    return this.comicsModel.create(comicDTO)
+  }
+
   async findAll() {
-    const find = await this.mappedMarvel()
-    return this.comicsModel.find(find)
+    return this.comicsModel.find()
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} comic`;
+  async findOne(id: string) {
+    return this.comicsModel.findOne({id: id});
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} comic`;
+  updateOne(id: string, comicDTO: ComicDto) {
+    return this.comicsModel.updateOne({id: id}, comicDTO)
+  }
+
+  remove(id: string) {
+    return this.comicsModel.deleteOne({id: id});
   }
 
   async readMarvel() {
@@ -47,12 +55,21 @@ export class ComicsService {
 
     try {
       const marvelData = await this.readMarvel();
-      const mappedData = await marvelData[0].comics.items.map((items) => {
+      const mappedDataPromises = await marvelData[0].comics.items.map(async (items) => {
+        const modifiedResourceURI = (`${items.resourceURI}?${this.param}`)
+        const dataFetch = await fetch(modifiedResourceURI)
+        const data = await dataFetch.json()
+        
         return {
+          id: data.data.results[0].id,
           name: items.name,
-          resourceURI: items.resourceURI
+          description: data.data.results[0].description,
+          dateOfPublication: data.data.results[0].dates[0].date,
+          urlImage: data.data.results[0].thumbnail.path
         };
       });
+
+      const mappedData = await Promise.all(mappedDataPromises);
       return mappedData;
     } catch (error) {
       console.error('Error in mappedMarvel:', error);

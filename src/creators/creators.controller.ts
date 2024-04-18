@@ -5,8 +5,8 @@ import { CreatorsService } from './creators.service';
 export class CreatorsController {
   constructor(private readonly creatorsService: CreatorsService) {}
 
-  @Get()
-  create() {
+  @Post()
+  async create() {
     return this.creatorsService.create();
   }
 
@@ -15,9 +15,9 @@ export class CreatorsController {
     return this.creatorsService.findAll();
   }
 
-  @Get(':name')
-  findOne(@Param('name') name: string) {
-    return this.creatorsService.findOne(name);
+  @Get(':id')
+  findOne(@Param('id') id: string) {
+    return this.creatorsService.findOne(id);
   }
 
   @Delete(':id')

@@ -1,6 +1,8 @@
 import { IsString } from "class-validator";
 
 export class CharacterDto {
+    @IsString()
+    id: string
 
     @IsString()
     name: string
@@ -9,5 +11,5 @@ export class CharacterDto {
     description: string
 
     @IsString()
-    url: string
+    urlImage: string
 }

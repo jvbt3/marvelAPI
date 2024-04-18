@@ -13,6 +13,12 @@ export class Comics {
 
     @Prop()
     description: string
+
+    @Prop()
+    dateOfPublication: string
+
+    @Prop()
+    urlImage: string
 }
 
 export const ComicsSchema = SchemaFactory.createForClass(Comics)

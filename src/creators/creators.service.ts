@@ -15,18 +15,15 @@ export class CreatorsService {
 
   async create() {
     const create = await this.mappedMarvel()
-    console.log(create)
     return this.creatorsModel.create(create)
   }
 
   async findAll() {
-    const find = await this.mappedMarvel()
-    return this.creatorsModel.find(find)
+    return this.creatorsModel.find()
   }
 
-  async findOne(name: string) {
-    const findOne = await this.mappedMarvel()
-    return this.creatorsModel.findOne({name: name})
+  async findOne(id: string) {
+    return this.creatorsModel.findOne({id: id})
   }
 
   remove(id: number) {
@@ -51,21 +48,15 @@ export class CreatorsService {
 
     try {
         const marvelData = await this.readMarvel();
-
         const mappedDataPromises = marvelData[0].creators.items.map(async (item) => {
-
-            const modifiedResourceURI = `${item.resourceURI}?${this.param}`;
-
+            const modifiedResourceURI = (`${item.resourceURI}?${this.param}`);
             const dataFetch = await fetch(modifiedResourceURI);
-
             const data = await dataFetch.json()
-
-            const comics = data.data.results[0].comics.items
-            
             return {
+                id: data.data.results[0].id,
                 name: item.name,
                 roles: item.role,
-                comics: comics
+                comics: data.data.results[0].comics.items
             };
         });
 

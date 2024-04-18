@@ -2,7 +2,7 @@ import { HttpService } from '@nestjs/axios';
 import { Injectable } from '@nestjs/common';
 import { AxiosResponse } from 'axios';
 import { Observable, map } from 'rxjs';
-import fs, { writeFile } from 'fs'
+import { writeFile } from 'fs'
 
 @Injectable()
 export class AppService {
@@ -26,7 +26,7 @@ export class AppService {
   WriteMarvel(dataMarvel: any) {
     this.getAllMarvel().subscribe(
       data => {
-        const dataString = JSON.stringify(dataMarvel, null, 2); 
+        const dataString = JSON.stringify(dataMarvel, null, 2);
         const filePath = 'marvel_data.json';
 
         writeFile(filePath, dataString, (err) => {

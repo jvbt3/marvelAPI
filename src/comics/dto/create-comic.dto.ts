@@ -10,9 +10,9 @@ export class ComicDto {
     @IsString()
     description: string
 
-    @IsDate()
-    dateOfPublication: Date
+    @IsString()
+    dateOfPublication: string
     
     @IsString()
-    urlCapa: string
+    urlImage: string
 }

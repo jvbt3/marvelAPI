@@ -6,7 +6,7 @@ import { CharacterDto } from './dto/create-character.dto';
 export class CharacterController {
   constructor(private readonly characterService: CharacterService) {}
 
-  @Get()
+  @Post()
   create() {
     return this.characterService.create();
   }
@@ -18,11 +18,11 @@ export class CharacterController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.characterService.findOne(+id);
+    return this.characterService.findOne(id);
   }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.characterService.remove(+id);
+    return this.characterService.remove(id);
   }
 }

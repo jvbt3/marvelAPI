@@ -51,15 +51,16 @@ export class ComicsService {
       const marvelData = await this.readMarvel();
       const mappedDataPromises = await marvelData[0].comics.items.map(async (items) => {
         const modifiedResourceURI = (`${items.resourceURI}?${this.param}`)
+        console.log(modifiedResourceURI)
         const dataFetch = await fetch(modifiedResourceURI)
         const data = await dataFetch.json()
-
-        const description = await data.data.results[0].description
         
         return {
           id: data.data.results[0].id,
           name: items.name,
-          description: description
+          description: data.data.results[0].description,
+          dateOfPublication: data.data.results[0].dates[0].date,
+          urlImage: data.data.results[0].thumbnail.path
         };
       });
 

@@ -3,6 +3,7 @@ const fs = require('fs').promises;
 import { InjectModel } from '@nestjs/mongoose';
 import { Characters } from './schema/characters_schema';
 import { Model } from 'mongoose';
+import { CharacterDto } from './dto/create-character.dto';
 
 @Injectable()
 
@@ -17,12 +18,20 @@ export class CharacterService {
     return this.charactersModel.create(create)
   }
 
+  createOne(characterDTO: CharacterDto) {
+    return this.charactersModel.create(characterDTO)
+  }
+
   findAll() {
       return this.charactersModel.find()
   }
 
-  async findOne(id: string) {
+  findOne(id: string) {
     return this.charactersModel.findOne({id: id});
+  }
+
+  update(id: string, characterDTO: CharacterDto) {
+    return this.charactersModel.updateOne({id: id}, characterDTO)
   }
 
   remove(id: string) {

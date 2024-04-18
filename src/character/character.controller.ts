@@ -11,6 +11,11 @@ export class CharacterController {
     return this.characterService.create();
   }
 
+  @Post('/create') 
+    createOne(@Body() characterDTO: CharacterDto) {
+      return this.characterService.createOne(characterDTO)
+  }
+
   @Get()
   findAll() {
     return this.characterService.findAll();
@@ -19,6 +24,11 @@ export class CharacterController {
   @Get(':id')
   findOne(@Param('id') id: string) {
     return this.characterService.findOne(id);
+  }
+
+  @Patch(':id')
+  updateOne(@Param('id') id: string, @Body() characterDTO: CharacterDto) {
+    return this.characterService.update(id, characterDTO)
   }
 
   @Delete(':id')

@@ -3,6 +3,7 @@ const fs = require('fs').promises;
 import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
 import { Creators } from './schema/creators_schema';
+import { CreateCreatorDto } from './dto/create-creator.dto';
 
 @Injectable()
 export class CreatorsService {
@@ -18,16 +19,24 @@ export class CreatorsService {
     return this.creatorsModel.create(create)
   }
 
-  async findAll() {
+  findAll() {
     return this.creatorsModel.find()
+  }
+
+  createOne(creatorDTO: CreateCreatorDto) {
+    return this.creatorsModel.create(creatorDTO)
   }
 
   async findOne(id: string) {
     return this.creatorsModel.findOne({id: id})
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} creator`;
+  update(id: string, creatorDTO: CreateCreatorDto) {
+    return this.creatorsModel.updateOne({id: id}, creatorDTO)
+  }
+
+  remove(id: string) {
+    return this.creatorsModel.deleteOne({id: id});
   }
 
   async readMarvel() {

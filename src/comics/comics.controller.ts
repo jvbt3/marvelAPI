@@ -6,9 +6,14 @@ import { ComicDto } from './dto/create-comic.dto';
 export class ComicsController {
   constructor(private readonly comicsService: ComicsService) {}
 
-  @Get()
+  @Post()
   create() {
     return this.comicsService.create();
+  }
+
+  @Post('/create/')
+  createOne(@Body() comicDTO: ComicDto) {
+    return this.comicsService.createOne(comicDTO)
   }
 
   @Get()
@@ -18,11 +23,16 @@ export class ComicsController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.comicsService.findOne(+id);
+    return this.comicsService.findOne(id);
+  }
+
+  @Patch(':id')
+  updateOne(@Param('id') id: string, @Body() comicDTO: ComicDto) {
+    return this.comicsService.updateOne(id, comicDTO)
   }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.comicsService.remove(+id);
+    return this.comicsService.remove(id);
   }
 }

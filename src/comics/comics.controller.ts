@@ -6,12 +6,12 @@ import { ComicDto } from './dto/create-comic.dto';
 export class ComicsController {
   constructor(private readonly comicsService: ComicsService) {}
 
-  @Post()
+  @Post('/create')
   create() {
     return this.comicsService.create();
   }
 
-  @Post('/create/')
+  @Post()
   createOne(@Body() comicDTO: ComicDto) {
     return this.comicsService.createOne(comicDTO)
   }

@@ -29,6 +29,10 @@ export class ComicsService {
     return this.comicsModel.findOne({id: id});
   }
 
+  async findName(name: string) {
+    return this.comicsModel.findOne({name: name});
+  }
+
   updateOne(id: string, comicDTO: ComicDto) {
     return this.comicsModel.updateOne({id: id}, comicDTO)
   }

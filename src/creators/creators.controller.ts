@@ -32,6 +32,11 @@ export class CreatorsController {
     return this.creatorsService.findOne(id);
   }
 
+  @Get('/search/:roles')
+  FindName(@Param('roles') roles: string) {
+    return this.creatorsService.findRoles(roles);
+  }
+
   @Delete(':id')
   remove(@Param('id', ParseIntPipe) id: string) {
     return this.creatorsService.remove(id);

@@ -8,8 +8,8 @@ export class CreateCreatorDto {
     @IsString()
     name: string
 
-    @IsString()
-    comics: string
+    @IsArray()
+    comics: [string]
 
     @IsString()
     roles: string

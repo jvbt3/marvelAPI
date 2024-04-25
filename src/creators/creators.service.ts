@@ -4,6 +4,9 @@ import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
 import { Creators } from './schema/creators_schema';
 import { CreateCreatorDto } from './dto/create-creator.dto';
+import { AxiosResponse } from 'axios';
+import { Observable, map } from 'rxjs';
+
 
 @Injectable()
 export class CreatorsService {
@@ -17,7 +20,7 @@ export class CreatorsService {
   async create() {
     const create = await this.mappedMarvel()
     return this.creatorsModel.create(create)
-  }
+  } 
 
   findAll() {
     return this.creatorsModel.find()
@@ -29,6 +32,10 @@ export class CreatorsService {
 
   async findOne(id: string) {
     return this.creatorsModel.findOne({id: id})
+  }
+
+  async findRoles(roles: string) {
+    return this.creatorsModel.find({roles: roles})
   }
 
   update(id: string, creatorDTO: CreateCreatorDto) {

@@ -1,0 +1,47 @@
+Rotas api marvel:
+
+localhost:3000/marvel -> Rota responsavel por realizar a requisição do tipo get na api e escrever os dados em um arquivo json chamado "marvel_data.json".
+
+
+Creators:
+
+localhost:3000/creators/create (POST) -> Rota responsável por ler o arquivo criado pela rota /marvel, realizar um map em creators, e salvar dentro do banco de dados.
+
+localhost:3000/creators/ (POST) -> Rota responsavel por criar um único criador a base de dados.
+
+localhost:3000/creators/ (GET) -> Rota responsavel por trazer as informações de todos os criadores.
+
+localhost:3000/creators/search/:roles (GET) -> Rota responsavel por trazer todos os criadores com um determinado cargo.
+
+localhost:3000/creators/:id (GET) -> Rota responsavel por buscar dentro do banco de dados, criadores com o ID passado na url.
+
+localhost:3000/creators/:id (PATCH) -> Rota responsavel por atualizar os dados do criador.
+
+localhost:3000/creators/:id (DELETE) -> Rota responsavel por deletar os dados do criador.
+
+
+Comics:
+
+localhost:3000/comics/create (POST) -> Rota responsável por ler o arquivo criado pela rota /marvel, realizar um map em comics, e salvar dentro do banco de dados.
+
+localhost:3000/comics/ (GET) -> Rota responsavel por trazer as informações de todos os comics.
+
+localhost:3000/comics/:id (GET) -> Rota responsavel por buscar dentro do banco de dados, comics com o ID passado na url.
+
+localhost:3000/comics/:id (PATCH) -> Rota responsavel por atualizar os dados da comics.
+
+localhost:3000/comics/:id (DELETE) -> Rota responsavel por deletar os dados da comics.
+
+
+Character:
+
+localhost:3000/character/create (POST) -> Rota responsável por ler o arquivo criado pela rota /marvel, realizar um map em character, e salvar dentro do banco de dados.
+
+localhost:3000/character/ (GET) -> Rota responsavel por trazer as informações de todos os character.
+
+localhost:3000/character/:id (GET) -> Rota responsavel por buscar dentro do banco de dados, character com o ID passado na url.
+
+localhost:3000/character/:id (PATCH) -> Rota responsavel por atualizar os dados dos character.
+
+localhost:3000/character/:id (DELETE) -> Rota responsavel por deletar os dados dos character.
+

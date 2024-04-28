@@ -4,8 +4,6 @@ import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
 import { Creators } from './schema/creators_schema';
 import { CreateCreatorDto } from './dto/create-creator.dto';
-import { AxiosResponse } from 'axios';
-import { Observable, map } from 'rxjs';
 
 
 @Injectable()

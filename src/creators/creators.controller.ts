@@ -1,7 +1,6 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete, ParseIntPipe } from '@nestjs/common';
 import { CreatorsService } from './creators.service';
 import { CreateCreatorDto } from './dto/create-creator.dto';
-import { ValidationPipe } from 'src/pipes/validation.pipe';
 
 @Controller('creators')
 export class CreatorsController {
@@ -13,7 +12,7 @@ export class CreatorsController {
   }
 
   @Post()
-  createOne(@Body(new ValidationPipe()) createDTO: CreateCreatorDto) {
+  createOne(@Body() createDTO: CreateCreatorDto) {
     return this.creatorsService.createOne(createDTO);
   }
 

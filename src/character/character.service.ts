@@ -13,29 +13,29 @@ export class CharacterService {
 
   constructor(@InjectModel(Characters.name) private charactersModel: Model<Characters>) { }
 
-  async create() {
-    const create = await this.mappedMarvel()
+  create() {
+    const create = this.mappedMarvel()
     return this.charactersModel.create(create)
   }
 
-  createOne(characterDTO: CharacterDto) {
-    return this.charactersModel.create(characterDTO)
+  async createOne(characterDTO: CharacterDto) {
+    return await this.charactersModel.create(characterDTO)
   }
 
-  findAll() {
-      return this.charactersModel.find()
+  async findAll() {
+      return await this.charactersModel.find()
   }
 
-  findOne(id: string) {
-    return this.charactersModel.findOne({id: id});
+  async findOne(id: string) {
+    return await this.charactersModel.findOne({id: id});
   }
 
-  update(id: string, characterDTO: CharacterDto) {
-    return this.charactersModel.updateOne({id: id}, characterDTO)
+  async update(id: string, characterDTO: CharacterDto) {
+    return await this.charactersModel.updateOne({id: id}, characterDTO)
   }
 
-  remove(id: string) {
-    return this.charactersModel.deleteOne({id: id});
+  async remove(id: string) {
+    return await this.charactersModel.deleteOne({id: id});
   }
 
   async readMarvel() {

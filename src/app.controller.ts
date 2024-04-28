@@ -5,6 +5,11 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(public readonly appService: AppService) {}
 
+  @Get('/')
+  getHello(): string {
+    return this.appService.getHello();
+  }
+
   @Get('/marvel')
   async getMarvelData() {
     try {

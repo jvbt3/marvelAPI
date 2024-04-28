@@ -8,8 +8,12 @@ import { writeFile } from 'fs'
 export class AppService {
   constructor(public readonly httpService: HttpService) { }
 
+  getHello(): string {
+    return 'Hello World!';
+  }
+
   getAllMarvel(): Observable<AxiosResponse<any>> {
-    const param = 'apikey=30e2ca2d99c629b3fd7decf3548bce07&ts=1&hash=870467879ca0c097576692935416d400'
+    const param = 'apikey=c775200a4df726e7906e708e88fcb7cc&ts=1&hash=43701cfef9bc98ff5e3c0c3774a2a4ed'
     const url = `https://gateway.marvel.com:443/v1/public/series?title=civil%20war&${param}`;
     try {
       return this.httpService.get(url).pipe(

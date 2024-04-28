@@ -7,32 +7,32 @@ export class ComicsController {
   constructor(private readonly comicsService: ComicsService) {}
 
   @Post('/create')
-  create() {
-    return this.comicsService.create();
+  async create() {
+    return await this.comicsService.create();
   }
 
   @Post()
-  createOne(@Body() comicDTO: ComicDto) {
-    return this.comicsService.createOne(comicDTO)
+  async createOne(@Body() comicDTO: ComicDto) {
+    return await this.comicsService.createOne(comicDTO)
   }
 
   @Get()
-  findAll() {
-    return this.comicsService.findAll();
+  async findAll() {
+    return await this.comicsService.findAll();
   }
 
   @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.comicsService.findOne(id);
+  async findOne(@Param('id') id: string) {
+    return await this.comicsService.findOne(id);
   }
 
   @Patch(':id')
-  updateOne(@Param('id') id: string, @Body() comicDTO: ComicDto) {
-    return this.comicsService.updateOne(id, comicDTO)
+  async updateOne(@Param('id') id: string, @Body() comicDTO: ComicDto) {
+    return await this.comicsService.updateOne(id, comicDTO)
   }
 
   @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.comicsService.remove(id);
+  async remove(@Param('id') id: string) {
+    return await this.comicsService.remove(id);
   }
 }

@@ -18,7 +18,7 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "test:stress": "autocannon -c 500 -d 20 -w 10 -W [ -c 1 -d 3 ] --renderStatusCodes --latency --debug http://localhost:3000/comics"
+    "test:stress": "autocannon -c 500 -d 20 -w 10 -W [ -c 1 -d 3 ] --renderStatusCodes --latency --debug http://localhost:3000/creators"
   },
   "dependencies": {
     "@nestjs/axios": "^3.0.2",

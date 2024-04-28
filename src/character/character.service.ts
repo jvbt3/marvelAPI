@@ -13,9 +13,9 @@ export class CharacterService {
 
   constructor(@InjectModel(Characters.name) private charactersModel: Model<Characters>) { }
 
-  async create() {
-    const create = await this.mappedMarvel()
-    return await this.charactersModel.create(create)
+  create() {
+    const create = this.mappedMarvel()
+    return this.charactersModel.create(create)
   }
 
   async createOne(characterDTO: CharacterDto) {
